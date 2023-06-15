@@ -690,6 +690,17 @@
       -ms-flex-align: center;
           align-items: center;
   z-index: 2;
+  border: none;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.top_games-slider .sw-nav .sw-prev:hover,
+.top_games-slider .sw-nav .sw-next:hover {
+  -webkit-box-shadow: 0px 11px 29.3333px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 11px 29.3333px rgba(0, 0, 0, 0.5);
 }
 
 .top_games-slider .sw-nav .sw-prev {
