@@ -950,71 +950,6 @@ span[data-typecolor=green] {
   margin-left: 50px;
 }
 
-.green-color-block-content {
-  margin-top: 40px;
-  margin-bottom: 50px;
-}
-
-.green-color-block-container {
-  border-radius: 20px;
-  background: #ecf8f1;
-  padding: 40px 50px;
-  display: grid;
-  grid-template-columns: 210px 1fr;
-  grid-gap: 70px;
-}
-
-.green-color-block-main-text {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 120%;
-  color: #2ecc71;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.green-color-block-main-text::before {
-  margin-right: 16px;
-  content: url("../img/page4/page4_icon_1.svg");
-}
-
-.green-color-block-second-text-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.green-color-block-second-text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 120%;
-  margin-bottom: 20px;
-}
-
-.green-color-block-second-text:last-child {
-  margin-bottom: 0;
-}
-
-.green-color-block-second-text-mail {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 120%;
-  display: block;
-  padding-bottom: 5px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  border-bottom: 1px solid #2ecc71;
-}
-
 .banner-text-container {
   margin-top: 30px;
   width: 100%;
@@ -1037,45 +972,192 @@ span[data-typecolor=green] {
   color: #000000;
 }
 
-.our_commitment {
-  margin-top: 40px;
+.contact_us-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 45px;
+  grid-gap: 40px;
+  border-top: 1px solid #dee3eb;
+  padding-top: 30px;
 }
 
-.our_commitment-main-text {
+.contact_us-image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 45px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact_us-image {
+  width: 83px;
+}
+
+.contact_us-image-text {
   font-weight: 600;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 120%;
   letter-spacing: -1px;
-  margin-bottom: 30px;
 }
 
-.our_commitment-cards {
-  display: grid;
-  background: #fef3fa;
+.contact_us-info-container {
+  border: 1px solid #dee3eb;
   border-radius: 20px;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 110px;
-  padding: 50px 70px;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  grid-gap: 24px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
-.our_commitment-card {
-  display: grid;
-  grid-template-columns: 27px 1fr;
-  grid-gap: 18px;
-}
-
-.our_commitment-card-text-main {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 120%;
-  margin-bottom: 20px;
-}
-
-.our_commitment-card-text-second {
+.contact_us-info-text {
   font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: #2e3066;
+  margin-bottom: 10px;
+}
+
+.contact_us-info-main-text {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.5px;
+  overflow-wrap: anywhere;
+}
+
+.comments_list {
+  margin-top: 60px;
+}
+
+.comments_list-main-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+  font-size: 33px;
+  line-height: 120%;
+  letter-spacing: -1px;
+  margin-bottom: 25px;
+}
+
+.comments_list-main-text[data-type=style1]::before {
+  margin-right: 17px;
+  width: 34px;
+  content: url("../img/pages_star.svg");
+}
+
+.comments_list-main-text[data-type=style1] span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #2ecc71;
+}
+
+.comments_list-main-text[data-type=style1] span::before {
+  margin-left: 17px;
+  margin-right: 7px;
+  content: url("../img/page2/page2_icon_1.svg");
+}
+
+.comments_list-main-text[data-type=style2]::before {
+  margin-right: 17px;
+  width: 34px;
+  content: url("../img/pages_star_2.svg");
+}
+
+.comments_list-main-text[data-type=style2] span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #2ecc71;
+}
+
+.comments_list-main-text[data-type=style2] span::before {
+  margin-left: 17px;
+  margin-right: 7px;
+  content: url("../img/page2/page2_icon_1.svg");
+}
+
+.comments_list-point {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dee3eb;
+}
+
+.comments_list-point:last-child {
+  margin-bottom: 0;
+}
+
+.comments_list-point-image-and-top-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  grid-gap: 22px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.comments_list-point-image {
+  width: 120px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+}
+
+.comments_list-point-top-main-text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.comments_list-point-top-second-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #2e3066;
+}
+
+.comments_list-text {
   font-size: 18px;
   line-height: 120%;
   margin-bottom: 20px;
+}
+
+.comments_list-text:last-child {
+  margin-bottom: 0;
+}
+
+.comments_list-point-href {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  color: #2e3066;
+  text-decoration: underline;
+  display: block;
 }
 
 @media screen and (max-width: 1310px) {
@@ -1104,6 +1186,15 @@ span[data-typecolor=green] {
 
   .photo_and_text-image {
     width: 100%;
+  }
+
+  .banner-text-container {
+    padding-bottom: 20px;
+  }
+
+  .contact_us-container {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
   }
 }
 
@@ -1263,14 +1354,14 @@ span[data-typecolor=green] {
     padding-bottom: 20px;
   }
 
-  .our_commitment-cards {
-    grid-template-columns: 1fr;
-    grid-gap: 30px;
-    padding: 20px 30px;
+  .comments_list-main-text {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 
-  .our_commitment-card-text-main {
-    margin-bottom: 10px;
+  .comments_list-main-text[data-type=style1] span,
+  .comments_list-main-text[data-type=style2] span {
+    display: none;
   }
 }
 
@@ -1453,12 +1544,6 @@ span[data-typecolor=green] {
     font-size: 15px;
   }
 
-  .green-color-block-container {
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-    padding: 25px 30px;
-  }
-
   .banner-text-container {
     margin-top: 10px;
   }
@@ -1472,21 +1557,73 @@ span[data-typecolor=green] {
     font-size: 15px;
   }
 
-  .our_commitment-cards {
+  .contact_us-container {
+    padding-top: 20px;
+  }
+
+  .contact_us-image-container {
     grid-gap: 20px;
-    padding: 15px 20px;
   }
 
-  .our_commitment-card {
-    grid-gap: 10px;
+  .contact_us-image {
+    width: 40px;
   }
 
-  .our_commitment-card-text-main {
+  .contact_us-image-text {
+    font-size: 20px;
+  }
+
+  .contact_us-info-container {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 10px;
+    grid-gap: 15px;
+  }
+
+  .contact_us-info-image {
+    width: 30px;
+  }
+
+  .contact_us-info-text {
+    margin-bottom: 3px;
+    font-size: 13px;
+  }
+
+  .contact_us-info-main-text {
     font-size: 15px;
   }
 
-  .our_commitment-card-text-second {
+  .comments_list {
+    margin-top: 30px;
+  }
+
+  .comments_list-main-text {
+    font-size: 20px;
+  }
+
+  .comments_list-point-image-and-top-text {
+    margin-bottom: 10px;
+  }
+
+  .comments_list-point-image {
+    width: 80px;
+  }
+
+  .comments_list-point-top-main-text {
+    font-size: 18px;
+  }
+
+  .comments_list-point-top-second-text {
+    font-size: 15px;
+  }
+
+  .comments_list-text {
     font-size: 15px;
     margin-bottom: 10px;
+  }
+
+  .comments_list-point-href {
+    font-size: 14px;
   }
 }

@@ -527,6 +527,9 @@
 
 .photo_and_text-container[data-type=reverse] {
   grid-template-columns: 1fr 480px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .photo_and_text-container[data-type=reverse] .photo_and_text-image {
@@ -561,6 +564,14 @@
   margin-bottom: 20px;
 }
 
+.photo_and_text-text-second-color {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 20px;
+  line-height: 120%;
+  color: #2ecc71;
+}
+
 .photo_and_text-text-strong {
   font-weight: 600;
   font-size: 20px;
@@ -582,6 +593,36 @@ span[data-typecolor=green] {
   font-weight: 600;
   font-size: 18px;
   line-height: 120%;
+}
+
+.photo_and_text-note-main-text {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  margin-top: 50px;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+}
+
+.photo_and_text-note-content {
+  background: #ecf6f8;
+  border-radius: 20px;
+  padding: 45px 70px;
+}
+
+.photo_and_text-note-text {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.photo_and_text-note-text::before {
+  margin-right: 14px;
+  content: url("../img/pages_info_icon_2.svg");
 }
 
 .green-color-block-content {
@@ -1143,6 +1184,10 @@ span[data-typecolor=green] {
     margin: auto;
   }
 
+  .photo_and_text-note-content {
+    padding: 15px 25px;
+  }
+
   .list_with_info-text {
     margin-left: 0;
     margin-bottom: 10px;
@@ -1228,7 +1273,22 @@ span[data-typecolor=green] {
     margin-bottom: 10px;
   }
 
+  .photo_and_text-text-second-color {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
   .photo_and_text-text-strong {
+    font-size: 15px;
+  }
+
+  .photo_and_text-note-main-text {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .photo_and_text-note-text {
     font-size: 15px;
   }
 
@@ -1370,5 +1430,14 @@ span[data-typecolor=green] {
 
   .banner-text-second {
     font-size: 15px;
+  }
+
+  .text {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .text:first-child {
+    margin-top: 15px;
   }
 }
