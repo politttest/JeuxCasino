@@ -740,6 +740,16 @@ span[data-typecolor=green] {
   content: "";
 }
 
+.list_with_star-text {
+  font-size: 24px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
 .list_with_star-second-text {
   margin-left: 50px;
   font-weight: 400;
@@ -975,7 +985,7 @@ span[data-typecolor=green] {
 }
 
 .list_with_margin-second-text a[data-typecolor=green] {
-  color: #2ECC71;
+  color: #2ecc71;
 }
 
 .list_with_margin-second-text:last-child {
@@ -1194,6 +1204,10 @@ span[data-typecolor=green] {
   }
 
   .list_with_star-second-text {
+    margin-left: 0;
+  }
+
+  .list_with_star-text {
     margin-left: 0;
   }
 
