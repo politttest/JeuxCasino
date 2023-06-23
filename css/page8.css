@@ -1030,6 +1030,138 @@ span[data-typecolor=green] {
   margin-left: 50px;
 }
 
+.faq {
+  background-image: url("../img/banner_1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.faq[data-typemargin=more] {
+  margin-top: 70px;
+  margin-bottom: 80px;
+}
+
+.faq-container {
+  display: grid;
+  grid-template-columns: 1fr 430px;
+  grid-gap: 100px;
+  padding-right: 50px;
+}
+
+.faq-list-main-text {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: -1px;
+  margin-bottom: 40px;
+}
+
+.faq-list-point {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 8px 30px rgba(10, 9, 38, 0.1);
+          box-shadow: 0px 8px 30px rgba(10, 9, 38, 0.1);
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.faq-list-point:last-child {
+  margin-bottom: 0;
+}
+
+.faq-list-point-main-text-container {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 13px 30px;
+  cursor: pointer;
+}
+
+.faq-list-point-main-text-button {
+  background-color: #2ecc71;
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin-right: 24px;
+  position: relative;
+  border-radius: 50%;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.faq-list-point-main-text-button::after {
+  position: absolute;
+  content: "";
+  width: 9px;
+  height: 2px;
+  left: 10.5px;
+  top: 14.5px;
+  background-color: #fff;
+  display: block;
+}
+
+.faq-list-point-main-text-button::before {
+  position: absolute;
+  visibility: 1;
+  content: "";
+  width: 9px;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  height: 2px;
+  left: 10.5px;
+  top: 14.5px;
+  background-color: #fff;
+  display: block;
+}
+
+.faq-list-point-main-text-button.active {
+  background-color: #2e3066;
+}
+
+.faq-list-point-main-text-button.active::before {
+  display: none;
+}
+
+.faq-list-point-main-text {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.5px;
+}
+
+.faq-list-point-second-text-container {
+  padding: 0;
+  overflow: 0;
+  padding-left: 85px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  overflow: hidden;
+}
+
+.faq-list-point-second-text-container.active {
+  padding: 20px;
+  padding-top: 7px;
+  padding-left: 85px;
+}
+
+.faq-list-point-second-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+.faq-image {
+  margin-top: 70px;
+}
+
 .banner-text-container {
   margin-top: 30px;
   width: 100%;
@@ -1063,6 +1195,50 @@ span[data-typecolor=green] {
   margin-top: 40px;
 }
 
+.small_photo_and_text {
+  margin-top: 20px;
+}
+
+.small_photo_and_text-card {
+  padding-bottom: 40px;
+  padding-top: 40px;
+  border-bottom: 1px solid #dee3eb;
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  grid-gap: 32px;
+}
+
+.small_photo_and_text-card[data-typebottom=false] {
+  border-bottom: none;
+}
+
+.small_photo_and_text-main-text {
+  font-weight: 600;
+  font-size: 33px;
+  line-height: 120%;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+}
+
+.small_photo_and_text-second-text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+
+.small_photo_and_text-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  margin-bottom: 25px;
+}
+
+.small_photo_and_text-card-image {
+  display: block;
+  width: 100%;
+}
+
 @media screen and (max-width: 1310px) {
   .game_cards-container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1074,6 +1250,15 @@ span[data-typecolor=green] {
 
   .top_games-second-text {
     margin-left: 0;
+  }
+
+  .faq-container {
+    grid-template-columns: 1fr;
+    padding-right: 0;
+  }
+
+  .faq-image {
+    display: none;
   }
 }
 
@@ -1246,6 +1431,16 @@ span[data-typecolor=green] {
 
   .list_with_star-main-text[data-type=none]::before {
     margin-left: 0px;
+  }
+
+  .faq-list-point-main-text-container {
+    grid-template-columns: 40px 1fr;
+    padding: 10px 17px;
+  }
+
+  .faq-list-point-second-text-container.active,
+  .faq-list-point-second-text-container {
+    padding-left: 58px;
   }
 
   .banner-text-container {
@@ -1442,6 +1637,33 @@ span[data-typecolor=green] {
     font-size: 15px;
   }
 
+  .faq {
+    padding-top: 30px;
+    padding-bottom: 38px;
+  }
+
+  .faq[data-typemargin=more] {
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+
+  .faq-list-main-text {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .faq-list-point-main-text {
+    font-size: 16px;
+  }
+
+  .faq-list-point-second-text {
+    font-size: 15px;
+  }
+
+  .footer-interesting-notes .sw-nav {
+    display: none;
+  }
+
   .banner-text-container {
     margin-top: 10px;
   }
@@ -1462,5 +1684,31 @@ span[data-typecolor=green] {
 
   .text:first-child {
     margin-top: 15px;
+  }
+
+  .small_photo_and_text {
+    margin-top: 10px;
+  }
+
+  .small_photo_and_text-card {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    grid-template-columns: 80px 1fr;
+    grid-gap: 20px;
+  }
+
+  .small_photo_and_text-main-text {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .small_photo_and_text-second-text {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .small_photo_and_text-text {
+    font-size: 15px;
+    margin-bottom: 10px;
   }
 }

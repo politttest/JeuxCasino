@@ -1052,15 +1052,139 @@ span[data-typecolor=green] {
   color: #000000;
 }
 
-.text {
+.phone_choose {
   margin-top: 30px;
+}
+
+.phone_choose-main-text {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+}
+
+.phone_choose-second-text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+}
+
+.phone_choose-card {
+  padding: 25px 70px;
+  border: 1px solid #dee3eb;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.phone_choose-card:last-child {
+  margin-bottom: 0;
+}
+
+.phone_choose-card-main-text {
   font-weight: 400;
   font-size: 18px;
   line-height: 120%;
+  margin-bottom: 18px;
 }
 
-.text:first-child {
-  margin-top: 40px;
+.phone_choose-card-second-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.phone_choose-card-second-text::before {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  content: url("../img/index/ind_top_games_icon_2.svg");
+  border-radius: 50%;
+  background-color: #D9F2F3;
+  margin-right: 19px;
+}
+
+.contact_us-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 70px;
+}
+
+.contact_us-image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 45px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact_us-image {
+  width: 83px;
+}
+
+.contact_us-image-text {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 120%;
+  letter-spacing: -1px;
+}
+
+.contact_us-info-container {
+  border: 1px solid #dee3eb;
+  border-radius: 20px;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  grid-gap: 24px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.contact_us-info-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: #2e3066;
+  margin-bottom: 10px;
+}
+
+.contact_us-info-main-text {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.5px;
+  overflow-wrap: anywhere;
 }
 
 @media screen and (max-width: 1310px) {
@@ -1455,12 +1579,73 @@ span[data-typecolor=green] {
     font-size: 15px;
   }
 
-  .text {
-    font-size: 15px;
-    margin-top: 10px;
+  .phone_choose-main-text {
+    font-size: 20px;
+    margin-bottom: 20px;
   }
 
-  .text:first-child {
-    margin-top: 15px;
+  .phone_choose-second-text {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .phone_choose-card {
+    padding: 20px 25px;
+  }
+
+  .phone_choose-card-main-text {
+    font-size: 15px;
+  }
+
+  .phone_choose-card-second-text {
+    font-size: 18px;
+  }
+
+  .phone_choose-card-second-text::before {
+    width: 24px;
+    height: 24px;
+  }
+
+  .contact_us-container {
+    padding-top: 20px;
+    margin-top: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    grid-gap: 20px;
+  }
+
+  .contact_us-image-container {
+    grid-gap: 20px;
+  }
+
+  .contact_us-image {
+    width: 40px;
+  }
+
+  .contact_us-image-text {
+    font-size: 20px;
+  }
+
+  .contact_us-info-container {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 10px;
+    grid-gap: 15px;
+  }
+
+  .contact_us-info-image {
+    width: 30px;
+  }
+
+  .contact_us-info-text {
+    margin-bottom: 3px;
+    font-size: 13px;
+  }
+
+  .contact_us-info-main-text {
+    font-size: 15px;
   }
 }

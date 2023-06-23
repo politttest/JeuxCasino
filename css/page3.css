@@ -690,6 +690,11 @@ span[data-typecolor=green] {
   font-weight: 400;
   font-size: 18px;
   line-height: 120%;
+  margin-bottom: 15px;
+}
+
+.list_with_star-second-text:last-child {
+  margin-bottom: 0;
 }
 
 .list_with_star-list {
@@ -1371,6 +1376,10 @@ span[data-typecolor=green] {
     font-size: 15px;
   }
 
+  .list_with_star-text {
+    font-size: 18px;
+  }
+
   .list_with_star-list-point-text {
     font-size: 15px;
     padding-left: 40px;
@@ -1489,6 +1498,10 @@ span[data-typecolor=green] {
   .our_commitment-cards {
     grid-gap: 20px;
     padding: 15px 20px;
+  }
+
+  .our_commitment-main-text {
+    font-size: 20px;
   }
 
   .our_commitment-card {

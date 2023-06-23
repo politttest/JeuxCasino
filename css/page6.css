@@ -755,6 +755,11 @@ span[data-typecolor=green] {
   font-weight: 400;
   font-size: 18px;
   line-height: 120%;
+  margin-bottom: 15px;
+}
+
+.list_with_star-second-text:last-child {
+  margin-bottom: 0;
 }
 
 .list_with_star-list {
@@ -1502,6 +1507,10 @@ span[data-typecolor=green] {
 
   .list_with_star-second-text {
     font-size: 15px;
+  }
+
+  .list_with_star-text {
+    font-size: 18px;
   }
 
   .list_with_star-list-point-text {
