@@ -13,6 +13,15 @@
   display: none;
 }
 
+.game_cards-main-text {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: -1px;
+}
+
 .game_cards-point {
   max-width: 209px;
   width: 100%;
@@ -257,6 +266,10 @@
   margin-bottom: 50px;
 }
 
+.jackpot-container[data-typebottom=false] {
+  border: none;
+}
+
 .jackpot-image {
   width: 100%;
 }
@@ -267,6 +280,21 @@
   line-height: 120%;
   margin-bottom: 17px;
   letter-spacing: -1px;
+}
+
+.jackpot-main-text[data-type=style2] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  max-width: 430px;
+  width: 100%;
+}
+
+.jackpot-main-text[data-type=style2]::after {
+  content: url("../img/jackpot_icon_2.svg");
 }
 
 .jackpot-color-main-text {
@@ -324,6 +352,49 @@
 
 .jackpot-text:last-child {
   margin-bottom: 0;
+}
+
+.jackpot-points-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 95px;
+  counter-reset: jackpotPointsNumber;
+  border-bottom: 1px solid #DEE3EB;
+  padding-bottom: 30px;
+}
+
+.jackpot-point {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  grid-gap: 20px;
+  counter-increment: jackpotPointsNumber;
+}
+
+.jackpot-point::before {
+  content: counter(jackpotPointsNumber);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #2ecc71;
+  height: 40px;
+  border-radius: 50%;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.jackpot-point-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
 }
 
 .faq {
@@ -458,6 +529,10 @@
   margin-top: 70px;
 }
 
+.top_games {
+  margin-top: 30px;
+}
+
 .top_games-main-text-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -497,7 +572,6 @@
 .top_games-second-text {
   margin-left: 50px;
   margin-top: 30px;
-  margin-bottom: 30px;
   font-weight: 400;
   font-size: 18px;
   line-height: 120%;
@@ -506,6 +580,7 @@
 .top_games-table {
   border-collapse: collapse;
   width: 100%;
+  margin-top: 30px;
   margin-bottom: 30px;
   -webkit-box-shadow: 0px 5px 40px rgba(21, 14, 47, 0.08);
           box-shadow: 0px 5px 40px rgba(21, 14, 47, 0.08);
@@ -537,7 +612,6 @@
 
 .top_games-row:first-child .top_games-row-element {
   border-top: none;
-  background: red;
 }
 
 .top_games-row:last-child .top_games-row-element {
@@ -556,6 +630,30 @@
 
 .top_games-row .top_games-row-element:last-child {
   border-right: none;
+}
+
+.top_games-header-row-element[data-typealign=center] {
+  text-align: center;
+}
+
+.top_games-row-element[data-typealign=center] {
+  text-align: center;
+}
+
+.top_games-row-element[data-typebottom=true] {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  -webkit-text-decoration: #2ECC71 underline;
+          text-decoration: #2ECC71 underline;
+}
+
+.top_games-row-element[data-more=true] {
+  color: #25A375;
+}
+
+.top_games-row-element[data-more=false] {
+  color: #D52B83;
 }
 
 .top_games-list-container {
@@ -1560,6 +1658,14 @@
 }
 
 @media screen and (max-width: 900px) {
+  .game_cards-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .game_cards-main-text {
+    font-size: 24px;
+  }
+
   .jackpot-container {
     grid-template-columns: 1fr;
   }
@@ -1690,10 +1796,6 @@
   .banner_sort-links-container {
     border: none;
     padding-top: 0;
-  }
-
-  .game_cards-container {
-    grid-template-columns: 1fr 1fr;
   }
 
   .comment_instruction {

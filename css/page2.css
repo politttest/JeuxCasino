@@ -67,6 +67,15 @@
   display: none;
 }
 
+.game_cards-main-text {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: -1px;
+}
+
 .game_cards-point {
   max-width: 209px;
   width: 100%;
@@ -244,6 +253,10 @@
   content: url("../img/cards/cards_icon_1.svg");
 }
 
+.top_games {
+  margin-top: 30px;
+}
+
 .top_games-main-text-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -283,7 +296,6 @@
 .top_games-second-text {
   margin-left: 50px;
   margin-top: 30px;
-  margin-bottom: 30px;
   font-weight: 400;
   font-size: 18px;
   line-height: 120%;
@@ -292,6 +304,7 @@
 .top_games-table {
   border-collapse: collapse;
   width: 100%;
+  margin-top: 30px;
   margin-bottom: 30px;
   -webkit-box-shadow: 0px 5px 40px rgba(21, 14, 47, 0.08);
           box-shadow: 0px 5px 40px rgba(21, 14, 47, 0.08);
@@ -323,7 +336,6 @@
 
 .top_games-row:first-child .top_games-row-element {
   border-top: none;
-  background: red;
 }
 
 .top_games-row:last-child .top_games-row-element {
@@ -342,6 +354,30 @@
 
 .top_games-row .top_games-row-element:last-child {
   border-right: none;
+}
+
+.top_games-header-row-element[data-typealign=center] {
+  text-align: center;
+}
+
+.top_games-row-element[data-typealign=center] {
+  text-align: center;
+}
+
+.top_games-row-element[data-typebottom=true] {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  -webkit-text-decoration: #2ECC71 underline;
+          text-decoration: #2ECC71 underline;
+}
+
+.top_games-row-element[data-more=true] {
+  color: #25A375;
+}
+
+.top_games-row-element[data-more=false] {
+  color: #D52B83;
 }
 
 .top_games-list-container {
@@ -773,8 +809,136 @@ span[data-typecolor=green] {
   content: "";
 }
 
+.list_with_star-list[data-type=style4] {
+  counter-reset: topGamesListExpectationsNumbers;
+  counter-reset: topGamesListExpectationsNumbers2;
+  margin-left: 0;
+}
+
+.list_with_star-list[data-type=style4] .list_with_star-list-point-text {
+  counter-increment: topGamesListExpectationsNumbers;
+}
+
+.list_with_star-list[data-type=style4] .list_with_star-list-point-text::before {
+  content: counter(topGamesListExpectationsNumbers);
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -8px;
+  left: 0;
+  background-color: #2ecc71;
+  color: #fff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list_with_star-list[data-type=style4] .list_with_star-list-point-text-container {
+  counter-increment: topGamesListExpectationsNumbers2;
+}
+
+.list_with_star-list[data-type=style5] {
+  margin-left: 80px;
+  display: grid;
+  grid-template-columns: 150px 150px;
+  grid-column-gap: 100px;
+}
+
+.list_with_star-list[data-type=style5] .list_with_star-list-point {
+  list-style: outside;
+  margin-bottom: 0;
+}
+
 .list_with_star-list[data-typemargin=small] {
   margin-bottom: 0;
+}
+
+.list_with_star-list-point-tc-main-text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -0.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 8px;
+}
+
+.list_with_star-list-point-tc-main-text::before {
+  content: counter(topGamesListExpectationsNumbers2);
+  background-color: #2ecc71;
+  color: #fff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  min-width: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list_with_star-list-point-tc-image {
+  width: 100%;
+  max-width: 787px;
+  margin-left: 60px;
+  margin-bottom: 20px;
+}
+
+.list_with_star-list-point-tc-second-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  margin-bottom: 20px;
+  margin-left: 60px;
+}
+
+.list_with_star-list-point-tc-second-text:last-child {
+  margin-bottom: 0;
+}
+
+.list_with_star-list-point-tc-text {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  margin-left: 60px;
+}
+
+.list_with_star-list-point-tc-list {
+  margin-left: 90px;
+}
+
+.list_with_star-list-point-tc-list-point {
+  list-style: outside;
+}
+
+.list_with_star-list-point-tc-list-point-href {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  border-bottom: 1px solid #2e3066;
+  padding-bottom: 0px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+  color: #2e3066;
 }
 
 .list_with_star-list-point {
@@ -792,6 +956,13 @@ span[data-typecolor=green] {
   letter-spacing: -0.5px;
   position: relative;
   padding-left: 60px;
+}
+
+.list_with_star-list-point-text-container {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.5px;
 }
 
 .list_with_star-color-text {
@@ -1210,6 +1381,14 @@ span[data-typecolor=green] {
 }
 
 @media screen and (max-width: 900px) {
+  .game_cards-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .game_cards-main-text {
+    font-size: 24px;
+  }
+
   .top_games-table {
     display: none;
   }
@@ -1365,6 +1544,11 @@ span[data-typecolor=green] {
     margin-left: 0px;
   }
 
+  .list_with_star-list-point-tc-image {
+    max-width: 450px;
+    width: 100%;
+  }
+
   .banner-text-container {
     padding-bottom: 20px;
   }
@@ -1494,6 +1678,23 @@ span[data-typecolor=green] {
     font-size: 15px;
   }
 
+  .list_with_star-list[data-type=style4] .list_with_star-list-point-text::before {
+    width: 24px;
+    height: 24px;
+    top: -2px;
+  }
+
+  .list_with_star-list[data-type=style5] {
+    margin-left: 20px;
+    grid-column-gap: 20px;
+  }
+
+  .list_with_star-list[data-type=style5] .list_with_star-list-point-text::before {
+    width: 24px;
+    height: 24px;
+    top: -2px;
+  }
+
   .list_with_info-main-text {
     font-size: 20px;
     margin-bottom: 15px;
@@ -1560,6 +1761,35 @@ span[data-typecolor=green] {
   }
 
   .list_with_margin-list-point-text {
+    font-size: 15px;
+  }
+
+  .list_with_star-list-point-tc-main-text {
+    font-size: 18px;
+  }
+
+  .list_with_star-list-point-tc-image {
+    max-width: 300px;
+    margin-left: 0;
+  }
+
+  .list_with_star-list-point-tc-second-text {
+    font-size: 15px;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .list_with_star-list-point-tc-text {
+    font-size: 15px;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .list_with_star-list-point-tc-list {
+    margin-left: 20px;
+  }
+
+  .list_with_star-list-point-tc-list-point-href {
     font-size: 15px;
   }
 
