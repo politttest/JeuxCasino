@@ -876,8 +876,6 @@ span[data-typecolor=green] {
 
 .list_with_star-list[data-type=style4] {
   counter-reset: topGamesListExpectationsNumbers;
-  counter-reset: topGamesListExpectationsNumbers2;
-  margin-left: 0;
 }
 
 .list_with_star-list[data-type=style4] .list_with_star-list-point-text {
@@ -906,6 +904,40 @@ span[data-typecolor=green] {
 }
 
 .list_with_star-list[data-type=style4] .list_with_star-list-point-text-container {
+  counter-increment: topGamesListExpectationsNumbers;
+}
+
+.list_with_star-list[data-type=style4_1] {
+  counter-reset: topGamesListExpectationsNumbers2;
+  margin-left: 0;
+}
+
+.list_with_star-list[data-type=style4_1] .list_with_star-list-point-text {
+  counter-increment: topGamesListExpectationsNumbers2;
+}
+
+.list_with_star-list[data-type=style4_1] .list_with_star-list-point-text::before {
+  content: counter(topGamesListExpectationsNumbers2);
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -8px;
+  left: 0;
+  background-color: #2ecc71;
+  color: #fff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list_with_star-list[data-type=style4_1] .list_with_star-list-point-text-container {
   counter-increment: topGamesListExpectationsNumbers2;
 }
 
@@ -1004,6 +1036,28 @@ span[data-typecolor=green] {
   width: fit-content;
   display: block;
   color: #2e3066;
+}
+
+.list_with_star-list-point-tc2-image-and-text {
+  display: grid;
+  margin-left: 60px;
+  grid-template-columns: 240px 1fr;
+  grid-gap: 30px;
+}
+
+.list_with_star-list-point-tc2-image {
+  width: 100%;
+}
+
+.list_with_star-list-point-tc2-second-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+.list_with_star-list-point-tc2-second-text:last-child {
+  margin-bottom: 0;
 }
 
 .list_with_star-list-point {
