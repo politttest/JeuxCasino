@@ -856,6 +856,18 @@
   color: #000000;
 }
 
+.top_games .top_games-slider.wrapper {
+  padding: 0;
+}
+
+.top_games .sw-prev {
+  left: -26px;
+}
+
+.top_games .sw-next {
+  right: -26px;
+}
+
 .banner_sort {
   margin-top: -146px;
 }
@@ -1870,6 +1882,20 @@
 @media screen and (max-width: 600px) {
   .jackpot {
     margin-top: 20px;
+  }
+
+  .jackpot-point {
+    grid-template-columns: 24px 1fr;
+  }
+
+  .jackpot-point::before {
+    height: 24px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .jackpot-point-text {
+    font-size: 15px;
   }
 
   .jackpot-container {

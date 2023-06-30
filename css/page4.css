@@ -724,6 +724,7 @@ span[data-typecolor=green] {
   width: -moz-fit-content;
   width: fit-content;
   border-bottom: 1px solid #2ecc71;
+  color: #000;
 }
 
 .banner-text-container {

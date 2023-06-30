@@ -286,6 +286,12 @@ body.disactive {
 
 .header-mobile-first-list-point {
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header-mobile-first-list-point-text {
@@ -298,18 +304,17 @@ body.disactive {
   padding: 20px 0;
   color: #000;
   cursor: pointer;
-}
-
-.header-mobile-first-list-point-text::after {
-  content: url("../img/header_mobile_list_icon_5.svg");
-  margin-left: auto;
-  margin-right: 10px;
+  width: 100%;
 }
 
 .header-mobile-first-list-point-text[data-type=cherry]::before {
   margin-right: 10px;
   width: 20px;
   content: url("../img/header_mobile_list_icon_1.svg");
+}
+
+.header-mobile-first-list-point-text[data-type=coin]::after {
+  content: "";
 }
 
 .header-mobile-first-list-point-text[data-type=coin]::before {
@@ -504,6 +509,7 @@ body.disactive {
   font-size: 20px;
   line-height: 23px;
   color: #fff;
+  border-bottom: 1px solid #ffffff00;
 }
 
 .nav-input-container {
@@ -638,10 +644,6 @@ body.disactive {
   color: #000000;
   display: block;
   border-bottom: 1px solid #fff;
-}
-
-.nav-popup-list-point-link:hover {
-  border-bottom: 1px solid #000;
 }
 
 .nav-popup-lists-image {
@@ -817,7 +819,7 @@ body.disactive {
 }
 
 .footer-interesting-notes .swiper {
-  padding-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .footer-interesting-notes .swiper .swiper-slide-container {
@@ -909,6 +911,7 @@ body.disactive {
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  color: #000;
 }
 
 .footer-interesting-notes .swiper .swiper-slide-container .swiper-slide-button:hover {
@@ -916,8 +919,8 @@ body.disactive {
           box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
-.footer-interesting-notes .sw-nav .sw-prev,
-.footer-interesting-notes .sw-nav .sw-next {
+.footer-interesting-notes .sw-nav .sw-prev2,
+.footer-interesting-notes .sw-nav .sw-next2 {
   position: absolute;
   background-color: #fff;
   width: 60px;
@@ -942,20 +945,34 @@ body.disactive {
   transition: all 0.2s ease;
 }
 
-.footer-interesting-notes .sw-nav .sw-prev:hover,
-.footer-interesting-notes .sw-nav .sw-next:hover {
+.footer-interesting-notes .sw-nav .sw-prev2:hover,
+.footer-interesting-notes .sw-nav .sw-next2:hover {
   -webkit-box-shadow: 0px 11px 29.3333px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 11px 29.3333px rgba(0, 0, 0, 0.5);
 }
 
-.footer-interesting-notes .sw-nav .sw-prev {
+.footer-interesting-notes .sw-nav .sw-prev2 {
   top: 95px;
   left: 0px;
 }
 
-.footer-interesting-notes .sw-nav .sw-next {
+.footer-interesting-notes .sw-nav .sw-next2 {
   right: 0px;
   top: 95px;
+}
+
+.footer-interesting-notes .sw-pag2 {
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-interesting-notes .sw-pag2 .swiper-pagination-bullet-active {
+  background-color: #2ecc71;
 }
 
 .footer-popular-casino-container {
