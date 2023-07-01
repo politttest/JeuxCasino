@@ -96,3 +96,31 @@
   height: 540px;
   left: -299px;
 }
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 900px) {
+  .header-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    grid-gap: 0;
+  }
+
+  .header-logo-container img {
+    width: 130px;
+  }
+
+  .header-list-point {
+    margin-bottom: 5px;
+  }
+
+  .header-list-point a {
+    font-size: 15px;
+  }
+}

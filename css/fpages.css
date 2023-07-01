@@ -1204,6 +1204,10 @@ span[data-typecolor=green] {
   margin-left: 50px;
 }
 
+.crumbs-container {
+  border-bottom: none;
+}
+
 .banner {
   background-image: none;
   background-color: #202e3f;
@@ -1283,6 +1287,7 @@ span[data-typecolor=green] {
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 25px;
+  background-position: center;
   position: relative;
 }
 
@@ -1541,7 +1546,7 @@ span[data-typecolor=green] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 73%;
 }
 
 .banner-top-casino-free-slots-logos {
@@ -2126,6 +2131,7 @@ span[data-typecolor=green] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  grid-gap: 20px;
 }
 
 .info_slot-info-list-point-second-text {
@@ -2566,6 +2572,72 @@ span[data-typecolor=green] {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .most_popular-container {
+    grid-template-columns: 1fr;
+  }
+
+  .info_slot-container {
+    grid-template-columns: 1fr;
+  }
+
+  .info_slot-logo {
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 16px;
+  }
+
+  .info_slot-info-list-point-second-text {
+    max-width: 150px;
+  }
+
+  .banner-top-casino-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .banner-top-casino-main-text {
+    max-width: inherit;
+    margin-bottom: 10px;
+  }
+
+  .banner-top-casino-right-part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    max-width: inherit;
+    grid-gap: 20px;
+  }
+
+  .banner-top-casino-free-slots {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    grid-gap: 0;
+  }
+
+  .banner-top-casino-free-slots-text {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .banner-top-casino-free-slots-right-part {
+    max-width: inherit;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .game_cards-container {
     grid-template-columns: 1fr 1fr;
@@ -2733,6 +2805,117 @@ span[data-typecolor=green] {
   .list_with_star-list-point-tc-image {
     max-width: 450px;
     width: 100%;
+  }
+
+  .most_popular-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+
+  .most_popular-card-image {
+    margin-bottom: 10px;
+  }
+
+  .most_popular-text-container {
+    margin-bottom: 10px;
+  }
+
+  .most_popular-buttons {
+    margin-top: 30px;
+  }
+
+  .info_slot-info-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .other_info-container {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+
+  .other_info-right-part-card {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .footer_dark-top-line {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .footer_dark-top-line-logo-container {
+    margin-bottom: 10px;
+  }
+
+  .footer_dark-bottom-line {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .footer_dark-bottom-line-second-text {
+    max-width: 410px;
+    margin-bottom: 10px;
+  }
+
+  .banner-top-line-top-line {
+    margin-bottom: 10px;
+  }
+
+  .banner-top-line {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .banner-top-casino-free-slots {
+    border-radius: 20px;
+  }
+
+  .banner-top-casino-free-slots-right-part {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .banner-top-casino-free-slots-logos {
+    margin-bottom: 10px;
+  }
+
+  .banner-top-casino-free-slots-logo {
+    height: 20px;
+    margin-bottom: 5px;
+  }
+
+  .banner-top-casino-free-slots-logos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -2963,5 +3146,113 @@ span[data-typecolor=green] {
 
   .list_with_star-list-point-tc-list-point-href {
     font-size: 15px;
+  }
+
+  .most_popular-main-text {
+    font-size: 24px;
+  }
+
+  .info_slot-info-container {
+    padding: 20px 25px;
+  }
+
+  .info_slot-info-list-point {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    grid-gap: 0;
+    margin-bottom: 10px;
+  }
+
+  .info_slot-info-list-point-second-text {
+    max-width: inherit;
+    margin-bottom: 0;
+  }
+
+  .info_slot-info-list-point-main-text {
+    width: 100%;
+  }
+
+  .other_info-left-part-main-text {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .other_info-left-part-second-text {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .banner-top-casino-right-part {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .list_with_star-list[data-type=style4] .list_with_star-list-point-text::before {
+    width: 24px;
+    height: 24px;
+    top: 0;
+    font-size: 12px;
+  }
+
+  .other_info-left-part-faq-top-line {
+    margin-top: 0;
+    margin-bottom: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .other_info-left-part-faq-main-text {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .footer_dark-top-line-logo-text {
+    display: none;
+  }
+
+  .footer_dark-top-line-age {
+    margin-left: 10px;
+  }
+
+  .footer_dark-top-line-list {
+    grid-gap: 10px;
+  }
+
+  .other_info-left-part-faq-list-point-main-text {
+    font-size: 18px;
+  }
+
+  .other_info-left-part-faq-list-point-second-text {
+    font-size: 15px;
+  }
+
+  .banner-top-line-top-line {
+    font-size: 24px;
+  }
+
+  .banner-main-fraim-main-text {
+    font-size: 20px;
+  }
+
+  .banner-top-line-icon {
+    margin-right: 10px;
+  }
+
+  .banner-top-line-stars {
+    padding: 10px 15px;
   }
 }

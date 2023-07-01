@@ -234,7 +234,7 @@ body.disactive {
   left: 0;
   right: 0;
   overflow: auto;
-  z-index: 2;
+  z-index: 3;
   background-color: #fff;
   display: none;
 }
