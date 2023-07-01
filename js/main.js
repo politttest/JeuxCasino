@@ -169,10 +169,35 @@ if (document.querySelector(".faq-list-point-second-text-container")){
   
     containerParent.querySelector(".faq-list-point-main-text-container").addEventListener("click", () => {
       document.querySelectorAll(".faq-list-point-main-text-button")[index].classList.toggle("active");
-      console.log(e);
       document.querySelectorAll(".faq-list-point-second-text-container")[index].classList.toggle("active");
       if (document.querySelectorAll(".faq-list-point-second-text-container")[index].classList.contains("active")) {
         e.style.height = accordHeight + "px";
+      } else {
+        e.style.height = "0px";
+      }
+    });
+  });
+}
+
+if (document.querySelector(".other_info-left-part-faq-list-point-second-text")){
+  document.querySelectorAll(".other_info-left-part-faq-list-point-second-text").forEach((e, index) => {
+    let containerParent = e.parentNode;
+    let accordHeight = e.clientHeight;
+  
+    e.style.height = "0px";
+  
+    containerParent.querySelector(".other_info-left-part-faq-list-point-main-text").addEventListener("click", (it) => {
+      // console.log(it.target.classList)
+      // it.target.classList.toggle("active");
+      // console.log(document.querySelectorAll(".other_info-left-part-faq-list-point-second-text"))
+      console.log(index)
+      // console.log(document.querySelectorAll(".other_info-left-part-faq-list-point-second-text")[index])
+      document.querySelectorAll(".other_info-left-part-faq-list-point-main-text")[index].classList.toggle("active");
+      document.querySelectorAll(".other_info-left-part-faq-list-point-second-text")[index].classList.toggle("active");
+      if (document.querySelectorAll(".other_info-left-part-faq-list-point-second-text")[index].classList.contains("active")) {
+        console.log(accordHeight)
+        e.style.height = accordHeight + "px";
+        console.log("awdwd")
       } else {
         e.style.height = "0px";
       }
@@ -189,21 +214,21 @@ if(document.querySelector(".most_popular-cards-more")){
   })
 }
 
-if(document.querySelector(".other_info-left-part-faq-list-point-main-text")){
-  document.querySelectorAll(".other_info-left-part-faq-list-point-main-text").forEach((e,index) => {
-    e.addEventListener("click", (it) => {
-      document.querySelectorAll(".other_info-left-part-faq-list-point-main-text")[index].classList.toggle("active")
-      document.querySelectorAll(".other_info-left-part-faq-list-point-second-text")[index].classList.toggle("active")
-    })
-  })
+// if(document.querySelector(".other_info-left-part-faq-list-point-main-text")){
+//   document.querySelectorAll(".other_info-left-part-faq-list-point-main-text").forEach((e,index) => {
+//     e.addEventListener("click", (it) => {
+//       document.querySelectorAll(".other_info-left-part-faq-list-point-main-text")[index].classList.toggle("active")
+//       document.querySelectorAll(".other_info-left-part-faq-list-point-second-text")[index].classList.toggle("active")
+//     })
+//   })
 
-  document.querySelector(".other_info-right-part-card-more-text").addEventListener("click", (e)=>{
-    document.querySelector(".other_info-right-part-card-more-text").classList.toggle("active");
-    document.querySelectorAll(".other_info-right-part-card.disactive").forEach((it) => {
-      it.classList.toggle("disactive");
-    })
-  })
-}
+//   document.querySelector(".other_info-right-part-card-more-text").addEventListener("click", (e)=>{
+//     document.querySelector(".other_info-right-part-card-more-text").classList.toggle("active");
+//     document.querySelectorAll(".other_info-right-part-card.disactive").forEach((it) => {
+//       it.classList.toggle("disactive");
+//     })
+//   })
+// }
 
 document.querySelector(".header-mobile-top-row-button").addEventListener("click", (e) => {
   document.querySelector("body").classList.toggle("disactive");
@@ -221,7 +246,7 @@ document.querySelector(".header-mobile-page-back-button").addEventListener("clic
 //   document.querySelector(".header-mobile-page").classList.toggle("active");
 //   document.querySelector(".header-mobile-lists").classList.toggle("active");
 // });
-document.querySelector(".header-mobile-first-list-point-image").addEventListener("click", () => {
+document.querySelector(".header-mobile-first-list-point-image-container").addEventListener("click", () => {
   document.querySelector(".header-mobile-page").classList.toggle("active");
   document.querySelector(".header-mobile-lists").classList.toggle("active");
 });
