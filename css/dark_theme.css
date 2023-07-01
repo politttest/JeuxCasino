@@ -3,15 +3,23 @@
 }
 
 .header-logo-text {
-  color: #CFD1DF;
+  color: #cfd1df;
 }
 
 .header-links-list-point-href {
-  color: #CFD1DF;
+  color: #cfd1df;
+}
+
+.header-links-list-point-href:hover {
+  border-bottom: 1px solid #cfd1df;
 }
 
 .header-main-link {
-  color: #CFD1DF;
+  color: #cfd1df;
+}
+
+.header-main-link:active {
+  color: #000;
 }
 
 .header-mobile-top-row-button span {
