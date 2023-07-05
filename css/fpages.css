@@ -2328,6 +2328,11 @@ span[data-typecolor=green] {
   padding-bottom: 30px;
 }
 
+.other_info-right-part-content {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 .other_info-right-part-card {
   padding: 15px 0;
   border-bottom: 1px solid #dfecee;
@@ -2882,6 +2887,10 @@ span[data-typecolor=green] {
     grid-gap: 30px;
   }
 
+  .other_info-right-part-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .other_info-right-part-card {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -3229,6 +3238,10 @@ span[data-typecolor=green] {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     padding: 10px 0;
+  }
+
+  .other_info-right-part-content {
+    grid-template-columns: 1fr;
   }
 
   .banner-top-casino-right-part {
